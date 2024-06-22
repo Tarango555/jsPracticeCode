@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculateSum</title>
+</head>
+<body>
+    <!--The following comment out codes are for practice.
+
+    <p>Fist Number: <input id="fnum" type="text" name="fnum"/></p>
+    <p>Second Number: <input id="snum" type="text" name="snum"/></p>
+    <button onclick="calculateSum()">Sum</button>
+    -->
+    <h1 id="demo"></h1>
+
+    <script>
+        function calculateSum(num1,num2){
+            return num1+num2;
+        }
+        document.getElementById('demo').innerHTML= `The sum is: ${calculateSum(1,157)}`;
+        //document.getElementById('demo').innerHTML= "The sum is: "+ calculateSum(10,12);
+
+        //The following comment out codes are for practice.
+       /*
+        function calculateSum(){
+            let num1= Number(document.getElementById('fnum').value);
+            let num2= Number(document.getElementById('snum').value);
+            const num= num1+ num2;
+            return document.getElementById('demo').innerHTML= "The sum is: "+ num;
+        }
+       */
+    </script>
+</body>
+</html>
