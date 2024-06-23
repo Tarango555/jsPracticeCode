@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findMax</title>
+</head>
+<body>
+    
+    <h1 id="demo"></h1>
+
+    <script>
+
+        const numArr= [34, 12, 89, 288, 23, 450, 343, 12, 45555];
+        function findMax(arr){
+            return Math.max(...arr);
+        }
+        document.getElementById('demo').innerHTML= `The maximum number is: ${findMax(numArr)}`;
+
+    </script>
+</body>
+</html>
