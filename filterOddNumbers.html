@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filterOddNumbers</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        const num=[23, 43, 12, 56, 34, 13, 58, 432, 79];
+
+        function filterOddNumbers(numArr){
+            return numArr.filter(checkOdd);
+            function checkOdd(item){
+                if(item%2==1){
+                    return item;
+                }
+            }
+        }
+
+        console.log(filterOddNumbers(num), typeof filterOddNumbers(num));
+        document.getElementById('demo').innerHTML= filterOddNumbers(num);
+    </script>
+</body>
+</html>
