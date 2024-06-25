@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sortArray</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        const arr= [8, 10, 3, 2, 6, 4, 1, 5, 7, 9];
+
+        function sortArray(numArr){
+            //return numArr.sort((a,b)=> a-b);
+            //console.log(numArr);
+            //console.log(numArr.toSorted(function(a,b) {return a-b}));
+            return numArr.toSorted(function(a,b) {return a-b});
+        }
+        document.getElementById('demo').innerHTML= sortArray(arr);
+    </script>
+</body>
+</html>
