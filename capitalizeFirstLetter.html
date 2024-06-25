@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capitalizeFirstLetter</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        const str="bangla";
+
+        function capitalizeFirstLetter(inpStr){
+            //return inpStr.charAt(0).toUpperCase()+ inpStr.slice(1);
+            return inpStr[0].toUpperCase()+ inpStr.slice(1);
+        }
+
+        document.getElementById('demo').innerHTML= capitalizeFirstLetter(str);
+    </script>
+</body>
+</html>
