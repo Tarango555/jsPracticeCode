@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumArray</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        const arr= [12, 13, 45, 78, 22];
+
+        function sumArray(numArr){
+            return numArr.reduce(addValues);
+
+            function addValues(total, value){
+                return total+value;
+            }
+        }
+        document.getElementById('demo').innerHTML= `Sum of the values: ${sumArray(arr)}`;
+    </script>
+</body>
+</html>
