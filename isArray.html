@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isArray</title>
+</head>
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        const arr= [23, 13]; //[23, 13]; //{name: "David"} //true; //"Bangladesh"; //34;
+
+        //using Array.isArray().....
+
+        // function is_Array(input){
+        //     const checkArr= Array.isArray(input);
+        //     if(checkArr===true){
+        //         return `Input is an array.`;
+        //     }else{
+        //         return `Input is not an array.It is a ${typeof input}.`;
+        //     }
+        //     //return checkArr===true ? `Input is an array.` : `Input is not an array. It is a ${typeof input}.`;
+        // }
+
+        //using instanceof operator......
+
+        function is_Array(input){
+            const checkArr= input instanceof Array;
+            return checkArr===true ? `Input is an array.` : `Input is not an array. It is a ${typeof input}.`;
+        }
+
+        document.getElementById('demo').innerHTML= is_Array(arr);
+        
+    </script>
+    
+</body>
+</html>
